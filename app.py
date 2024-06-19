@@ -13,7 +13,9 @@ def start_download():
         if yt_vid is not None:
             yt_vid.download()
         fin.configure(text = "Downloaded!")
-    
+    except:
+        fin.configure(text = "YouTube link is Invalid!",text_color = "red")
+
 def on_progress(stream,chunk,bytes_rem):
     total_size = stream.filesize
     bytes_downloaded = total_size - bytes_rem
