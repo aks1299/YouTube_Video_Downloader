@@ -59,7 +59,7 @@ default_path = os.path.join(os.path.expanduser("~"), "Downloads")
 
 # App dimensions and settings
 app = ct.CTk()
-app.geometry("480x450")
+app.geometry("720x480")
 app.title("YouTube Video Downloader")
 
 # Add UI
